@@ -30,6 +30,5 @@ Follow these steps to clone and run the project locally:
 4. Open the project in your code editor:
    code .
 
-6. Run locally
-   You can simply open the index.html file in your browser
+6. You can now simply open the index.html file in your browser
    OR use Live Server if you’re using VS Code
