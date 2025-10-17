@@ -22,14 +22,14 @@ Font Awesome Icons (CDN)
 Follow these steps to clone and run the project locally:
 
 1. Clone the repository
-   git clone https://github.com/yourusername/profile-card.git
+   git clone https://github.com/hamzadlb/fe_stage_zero.git
 
-2. Move into the project directory
+3. Move into the project directory
    cd profile-card
 
-3. Open the project in your code editor
+4. Open the project in your code editor
    code .
 
-4. Run locally
+5. Run locally
    You can simply open the index.html file in your browser
    OR use Live Server if you’re using VS Code
