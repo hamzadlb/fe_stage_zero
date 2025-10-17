@@ -1,0 +1,157 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background: rgb(129, 123, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Avatar */
+
+  .avatar {
+    text-align: center;
+  }
+  
+  .avatar img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(129, 123, 123);
+  }
+
+  /* Time */
+
+  .time {
+    text-align: center;
+    color: #444;
+  }
+
+
+  /* Text */
+
+  .name {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .bio {
+    text-align: center;
+    color: #555;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Links */
+  .links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  
+  .links li {
+    background: #f0f0f0;
+    color: #444;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Hobbies and Dislikes */
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+
+  .hobbies, .dislikes {
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .hobbies-list, .dislikes-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .hobbies-list li, .dislikes-list li {
+    background: #f0f0f0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  /* Responsive Layout */
+  
+  /* Tablets */
+
+  @media (min-width: 600px) {
+    .card {
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem;
+      position: relative;
+    }
+
+    .avatar {
+      padding: 0.5rem;
+    }
+  
+    .avatar img {
+      width: 170px;
+      height: 170px;
+    }
+
+    .time {
+      position: absolute;
+       bottom: 0;
+       
+       left: 1;
+    }
+
+    .hobbies, .dislikes {
+      padding: 1rem 0.5rem;
+    }
+
+  }
+
+  /* Laptops */
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .time {
+      position: unset;
+    }
+  }
+  
